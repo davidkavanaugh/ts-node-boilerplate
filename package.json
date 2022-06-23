@@ -1,0 +1,20 @@
+{
+  "name": "ts-node-boilerplate",
+  "version": "1.0.0",
+  "description": "Full Stack TypeScript Node Application",
+  "main": "ui/src/index.tsx",
+  "scripts": {
+    "setup": "npm install && npm run setup:api && npm run setup:ui",
+    "start": "concurrently \"cd api && npm start\" \"cd ui && npm start\"",
+    "dev": "concurrently \"cd api && npm run dev\" \"cd ui && npm run dev\"",
+    "setup:api": "cd api && npm install",
+    "setup:ui": "cd ui && npm install",
+    "test:api": "cd api && npm test",
+    "test:ui": "cd ui && npm test"
+  },
+  "author": "David Kavanaugh",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
