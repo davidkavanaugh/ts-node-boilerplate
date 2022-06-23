@@ -1,7 +1,7 @@
 {
-  "name": "ts-node-boilerplate",
+  "name": "ts-node-pwa-boilerplate",
   "version": "1.0.0",
-  "description": "Full Stack TypeScript Node Application",
+  "description": "Full Stack TypeScript Node Progressive Application",
   "main": "ui/src/index.tsx",
   "scripts": {
     "setup": "npm install && npm run setup:api && npm run setup:ui",
